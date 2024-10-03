@@ -1,7 +1,7 @@
 import streamlit as st
 import tensorflow as tf
 import numpy as np
-from streamlit_navigation_bar import st_navbar
+from streamlit_option_menu import option_menu
 
 
 #Tensorflow Model Prediction
@@ -18,35 +18,16 @@ def model_prediction(test_image):
 # app_mode = st.sidebar.selectbox("Select Page",["Disease Recognition","About"])
 
 #Navbar
-st.set_page_config(initial_sidebar_state="collapsed")
-
-pages = ["Detection", "About"]
-styles = {
-    "nav": {
-        "background-color": "rgb(123, 209, 146)",
-    },
-    "div": {
-        "max-width": "32rem",
-    },
-    "span": {
-        "border-radius": "0.5rem",
-        "color": "rgb(49, 51, 63)",
-        "margin": "0 0.125rem",
-        "padding": "0.4375rem 0.625rem",
-    },
-    "active": {
-        "background-color": "rgba(255, 255, 255, 0.25)",
-    },
-    "hover": {
-        "background-color": "rgba(255, 255, 255, 0.35)",
-    },
-}
-
-page = st_navbar(pages, styles=styles)
-st.write(page)
+selected = option_menu(
+    menu_title = None,
+    options = ["Disease Recognition", "About"],
+    icons = ["house", "house"],
+    default_index = 0,
+    orientation = "horizontal",
+)
 
 #Main Page
-if(app_mode=="Disease Recognition"):
+if(selected=="Disease Recognition"):
     st.header("Disease Recognition")
     test_image = st.file_uploader("Choose an Image:")
     # if(st.button("Show Image")):
@@ -76,7 +57,7 @@ if(app_mode=="Disease Recognition"):
         st.success("Model is Predicting it's a {}".format(class_name[result_index]))
 
 #About Project
-elif(app_mode=="About"):
+elif(selected=="About"):
     st.header("About")
     st.markdown("""
                 #### About Dataset
