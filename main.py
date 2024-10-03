@@ -21,7 +21,7 @@ def model_prediction(test_image):
 selected = option_menu(
     menu_title = None,
     options = ["Disease Recognition", "About"],
-    icons = ["house", "house"],
+    icons = ["search", "info-circle-fill"],
     default_index = 0,
     orientation = "horizontal",
 )
