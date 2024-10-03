@@ -20,7 +20,7 @@ def model_prediction(test_image):
 #Navbar
 st.set_page_config(initial_sidebar_state="collapsed")
 
-pages = ["Home", "Library", "Tutorials", "Development", "Download"]
+pages = ["Detection", "About"]
 styles = {
     "nav": {
         "background-color": "rgb(123, 209, 146)",
