@@ -1,6 +1,7 @@
 import streamlit as st
 import tensorflow as tf
 import numpy as np
+from streamlit_navigation_bar import st_navbar
 
 
 #Tensorflow Model Prediction
@@ -12,9 +13,37 @@ def model_prediction(test_image):
     predictions = model.predict(input_arr)
     return np.argmax(predictions) #return index of max element
 
-#Sidebar
-st.sidebar.title("Dashboard")
-app_mode = st.sidebar.selectbox("Select Page",["Disease Recognition","About"])
+# #Sidebar
+# st.sidebar.title("Dashboard")
+# app_mode = st.sidebar.selectbox("Select Page",["Disease Recognition","About"])
+
+#Navbar
+st.set_page_config(initial_sidebar_state="collapsed")
+
+pages = ["Home", "Library", "Tutorials", "Development", "Download"]
+styles = {
+    "nav": {
+        "background-color": "rgb(123, 209, 146)",
+    },
+    "div": {
+        "max-width": "32rem",
+    },
+    "span": {
+        "border-radius": "0.5rem",
+        "color": "rgb(49, 51, 63)",
+        "margin": "0 0.125rem",
+        "padding": "0.4375rem 0.625rem",
+    },
+    "active": {
+        "background-color": "rgba(255, 255, 255, 0.25)",
+    },
+    "hover": {
+        "background-color": "rgba(255, 255, 255, 0.35)",
+    },
+}
+
+page = st_navbar(pages, styles=styles)
+st.write(page)
 
 #Main Page
 if(app_mode=="Disease Recognition"):
