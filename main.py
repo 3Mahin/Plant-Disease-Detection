@@ -15,19 +15,19 @@ def model_prediction(test_image):
 
 # #Sidebar
 # st.sidebar.title("Dashboard")
-# app_mode = st.sidebar.selectbox("Select Page",["Disease Recognition","About"])
+# app_mode = st.sidebar.selectbox("Select Page",["Detection","About"])
 
 #Navbar
 selected = option_menu(
     menu_title = None,
-    options = ["Disease Recognition", "About"],
+    options = ["Detection", "About"],
     icons = ["search", "info-circle-fill"],
     default_index = 0,
     orientation = "horizontal",
 )
 
 #Main Page
-if(selected=="Disease Recognition"):
+if(selected=="Detection"):
     st.header("Disease Recognition")
     test_image = st.file_uploader("Choose an Image:")
     # if(st.button("Show Image")):
