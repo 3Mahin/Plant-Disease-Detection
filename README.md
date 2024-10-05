@@ -4,7 +4,7 @@
 
 This is an AI model trained to detect Plant Leaf Diseases.
 
-The project is hosted on **`Streamlit.app`** and can be viewed through by clicking this **[link](https://github.com/3Mahin/Plant-Disease-Detection-App)**
+The project is hosted on **`Streamlit.app`** and can be viewed through by clicking this **[link](https://mahinpdd.streamlit.app/)**
 
 It also comes with an **`Android Application`** which you can download throught the following **[repository](https://github.com/3Mahin/Plant-Disease-Detection-App)**
 
