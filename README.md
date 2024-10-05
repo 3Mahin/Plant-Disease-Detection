@@ -4,11 +4,15 @@
 
 This is an AI model trained to detect Plant Leaf Diseases.
 
+The project is hosted on **`Streamlit.app`** and can be viewed through by clicking this **[link](https://github.com/3Mahin/Plant-Disease-Detection-App)**
+
 It also comes with an **`Android Application`** which you can download throught the following **[repository](https://github.com/3Mahin/Plant-Disease-Detection-App)**
 
 ## **Introduction**
 
-I love gardening. When I was young I used to plant varieties of fruit seeds. But when they grew you most of the developed some kind of disease which I could not diagnose. And being broke I could not afford to pay someone to look at it. After 19 years, I made this model that can detect the kind of disease the plant has.
+I've always loved gardening. As a child, I planted various fruit seeds, hoping to watch them grow. Unfortunately, most of the plants developed diseases that I couldn’t identify. And at the time, being broke, I couldn’t afford professional help to figure out what was wrong.
+
+Now, after 19 years, I’ve created a model that can detect and diagnose plant diseases, making it easier for gardeners like me to care for their plants.
 
 ## **Installation**
 
