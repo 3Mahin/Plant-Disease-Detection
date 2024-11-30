@@ -84,8 +84,8 @@ elif selected == "About":
         2. test (33 images)
         3. validation (17572 images)
         #### Made with love by
-        Muhaiminu Mahin Mehedi
-        Sanzidil Mohsina
-        Tayammum Ahmed
-        Zulkar Nain
+        1. Muhaiminu Mahin Mehedi
+        2. Sanzidil Mohsina
+        3. Tayammum Ahmed
+        4. Zulkar Nain
     """)
