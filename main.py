@@ -21,7 +21,7 @@ def add_background_image(image_url):
     )
 
 # Call the function with your image URL or local path
-add_background_image("./banner-plant-and-leave-space-for-text-on-white-background-vector.jpg")  # Replace with your image URL
+add_background_image("banner-plant-and-leave-space-for-text-on-white-background-vector.jpg")  # Replace with your image URL
 
 # TensorFlow Model Prediction
 def model_prediction(test_image):
