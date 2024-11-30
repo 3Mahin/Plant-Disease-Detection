@@ -21,7 +21,9 @@ def add_background_image(image_url):
     )
 
 # Call the function with your image URL or local path
-add_background_image("https://static.vecteezy.com/system/resources/previews/009/644/381/non_2x/banner-plant-and-leave-space-for-text-on-white-background-vector.jpg")  # Replace with your image URL
+# add_background_image("https://static.vecteezy.com/system/resources/previews/009/644/381/non_2x/banner-plant-and-leave-space-for-text-on-white-background-vector.jpg")  # Replace with your image URL
+
+add_background_image("https://png.pngtree.com/background/20210712/original/pngtree-marble-texture-green-leaf-background-picture-image_1178654.jpg") 
 
 # TensorFlow Model Prediction
 def model_prediction(test_image):
