@@ -83,4 +83,9 @@ elif selected == "About":
         1. train (70295 images)
         2. test (33 images)
         3. validation (17572 images)
+        #### Made with love by
+        Muhaiminu Mahin Mehedi
+        Sanzidil Mohsina
+        Tayammum Ahmed
+        Zulkar Nain
     """)
