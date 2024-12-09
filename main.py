@@ -80,10 +80,13 @@ elif selected == "About":
         This dataset consists of about 87K rgb images of healthy and diseased crop leaves which is categorized into 38 different classes.The total dataset is divided into 80/20 ratio of training and validation set preserving the directory structure.
         A new directory containing 33 test images is created later for prediction purpose.
     """)
+
     image_path = "accuracy.png"
     st.image(image_path,use_column_width=True)
 
     st.markdown("""
+        As seen from the graph the accuracy of the model is over 95%. This  was achieved due to the high amount of image data used while training the model. The details are mentioned in the contents section below.
+
         #### Content
         1. train (70295 images)
         2. test (33 images)
